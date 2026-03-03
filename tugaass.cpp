@@ -1,26 +1,30 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
+//Deklarasi Global
+    float p,l;
 
-float p,l;
-
-void input () {
-    cout << "masukkan panjang : " ;
+//implementasi prosedure & fungsi
+void input(){
+    cout << "masukkan panjang :";
     cin >> p;
-    cout << "masukkan lebar : " ;
+    cout << "masukkan lebar :";
     cin >> l;
-
 }
 
-float LuasPersegi(){
-    return p*l;
-
+float LuasPersegi(float x,float y){
+    return x*y;
 }
 
-void output (){
-    cout << "hasilnya = " << LuasPersegi ();
+int jumlah(int a, int b, int c){
+    return a+b+c;
 }
-int main ()
-{
-    input();
-    output ();
+void Output () {
+    cout <<"Hasilnya = " << LuasPersegi(p,l) << endl;
 }
+// program utama 
+int main()
+{//start
+    input ();
+    Output ();
+    cout << "hasil Penjumlahan = "<< jumlah(5,6,9);
+}//selesai
